@@ -1,0 +1,137 @@
+/**
+ * Common CSS for Cloud Nine Apps.
+ */
+
+.c9-alternate-color-tabular-list {
+  position: relative;
+  list-style-type: none !important;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.c9-alternate-color-tabular-list > li {
+  width: 100%;
+  float: left;
+  padding: 3px;
+  border: 1px solid #C9C9C9;
+  border-bottom: 0;
+  list-style-type: none !important;
+  cursor: pointer;
+}
+
+.c9-alternate-color-tabular-list > li:nth-child(even) {
+  background-color: #F9F9F9;
+}
+
+.c9-alternate-color-tabular-list > li:last-child {
+  border: 1px solid #C9C9C9;
+}
+
+.c9-alternate-color-tabular-list > li:hover {
+  background-color: lightblue;
+}
+
+.c9-tabs {
+  float : left;
+  width : 100%;
+}
+
+.c9-tabs > input{
+  display: none;
+}
+
+.c9-tabs > input:checked + section > h1 {
+  position: relative;
+  z-index : 2;
+}
+
+.c9-tabs > input:checked + section > h1 > label {
+  background: #f1f1f1;
+}
+
+.c9-tabs > input:not(:checked) + section > div {
+  display: none;
+}
+
+.c9-tabs > input + section > h1 > label:hover {
+  background: #fff;
+}
+
+.c9-tabs > section > h1 {
+  float      : left;
+  box-sizing : border-box;
+  margin     : 0;
+  padding    : 0.5em 0.5em 0;
+  overflow   : hidden;
+  font-size  : 1em;
+  font-weight: normal;
+}
+
+.c9-tabs > section > h1 > label {
+  cursor                 : pointer;
+  -moz-user-select       : none;
+  -ms-user-select        : none;
+  -webkit-user-select    : none;
+  display                : block;
+  padding                : 0.25em 0.75em;
+  border                 : 1px solid #ddd;
+  border-bottom          : none;
+  border-top-left-radius : 4px;
+  border-top-right-radius: 4px;
+  box-shadow             : 0 0 0.5em rgba(0,0,0,0.0625);
+  background             : #CCC;
+}
+
+.c9-tabs > section > div {
+  float        : right;
+  width        : 100%;
+  margin       : 2.5em 0 0 -100%;
+  box-sizing   : border-box;
+  padding      : 0.5em 0.75em;
+  border       : 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow   : 0 0 0.5em rgba(0,0,0,0.0625);
+  background   : #fff;
+  position     : relative;
+  z-index      : 1;
+}
+
+.c9-tabs > input:first-child + section > h1{
+  padding-left: 1em;
+}
+
+.c9-search-arrow {
+  padding         : 6px 12px;
+  font-size       : 1em;
+  font-weight     : normal;
+  border-radius   : 50%;
+  background-color: royalblue;
+  color           : white;
+  text-decoration : none;
+  display         : inline-block;
+}
+
+.c9-search-arrow:hover {
+  background-color: lightblue;
+  color           : white;
+}
+
+.c9-disabled {
+  pointer-events  : none;
+  background-color: lightgray;
+}
+
+.c9-settings {
+  background: #ffffff;
+}
+
+.c9-settings .form-table th {
+  vertical-align: top;
+  padding: 10px;
+}
+
+.c9-settings .form-table td {
+  vertical-align: top;
+  padding: 10px;
+}
